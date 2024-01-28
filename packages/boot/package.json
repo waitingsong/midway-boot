@@ -21,32 +21,32 @@
     "./package.json": "./package.json"
   },
   "bugs": {
-    "url": "https://github.com/waitingsong/midway-components/issues"
+    "url": "https://github.com/waitingsong/midway-boot/issues"
   },
-  "homepage": "https://github.com/waitingsong/midway-components/tree/main/packages/boot#readme",
+  "homepage": "https://github.com/waitingsong/midway-boot/tree/main/packages/boot#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/waitingsong/midway-components"
+    "url": "https://github.com/waitingsong/midway-boot"
   },
   "license": "MIT",
   "dependencies": {
-    "@midwayjs/info": "^3.14.0",
-    "@midwayjs/prometheus": "^3.14.0",
-    "@midwayjs/redis": "^3.14.0",
-    "@midwayjs/static-file": "^3.14.0",
+    "@midwayjs/info": "^3.14.7",
+    "@midwayjs/prometheus": "^3.14.7",
+    "@midwayjs/redis": "^3.14.7",
+    "@midwayjs/static-file": "^3.14.7",
     "@mwcp/ali-oss": "^20.9.0",
     "@mwcp/cache": "^20.9.0",
     "@mwcp/fetch": "^26.0.0",
     "@mwcp/jwt": "^20.9.0",
-    "@mwcp/kmore": "^59.0.0",
-    "@mwcp/koid": "^14.0.0",
+    "@mwcp/kmore": "^59.1.0",
+    "@mwcp/koid": "^14.2.0",
     "@mwcp/otel": "^20.9.0",
     "@mwcp/share": "^20.9.0",
     "@waiting/shared-core": "^23.0.0",
-    "undici": "^6.3.0"
+    "undici": "^6.5.0"
   },
   "devDependencies": {
-    "@midwayjs/swagger": "^3.14.0",
+    "@midwayjs/swagger": "^3.14.9",
     "kmore-cli": "^59.0.0"
   },
   "engines": {
