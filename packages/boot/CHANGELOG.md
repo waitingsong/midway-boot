@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [20.11.0](https://github.com/waitingsong/midway-boot/compare/v20.10.0...v20.11.0) (2024-02-01)
+
+
+### Features
+
+* **boot:** add deps @midwayjs/upload ([94897f1](https://github.com/waitingsong/midway-boot/commit/94897f1e36d05637455ba37aa4952a4c17d1bdf8))
+
+
+
+
+
 # [20.10.0](https://github.com/waitingsong/midway-boot/compare/v20.9.0...v20.10.0) (2024-01-28)
 
 **Note:** Version bump only for package @mwcp/boot
