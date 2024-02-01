@@ -1,6 +1,7 @@
 import * as info from '@midwayjs/info'
 import * as koa from '@midwayjs/koa'
 import * as prometheus from '@midwayjs/prometheus'
+import * as upload from '@midwayjs/upload'
 import * as validate from '@midwayjs/validate'
 import * as aliOss from '@mwcp/ali-oss'
 import * as cache from '@mwcp/cache'
@@ -30,6 +31,7 @@ export const useComponents: IComponentInfo[] = [
   db,
   aliOss,
   cache,
+  upload,
   info,
 ]
 
