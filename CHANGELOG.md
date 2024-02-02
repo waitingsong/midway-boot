@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [20.12.0](https://github.com/waitingsong/midway-boot/compare/v20.11.0...v20.12.0) (2024-02-02)
+
+
+### Features
+
+* **boot:** inject ValidateService in RootClass ([ed69835](https://github.com/waitingsong/midway-boot/commit/ed69835aeb79c7a48be6487fdc3f5a38d910d6ae))
+
+
+
+
+
 # [20.11.0](https://github.com/waitingsong/midway-boot/compare/v20.10.0...v20.11.0) (2024-02-01)
 
 
