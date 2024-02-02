@@ -2,6 +2,7 @@
 import type { IncomingHttpHeaders } from 'node:http'
 
 import { App, Config, Inject, MidwayEnvironmentService } from '@midwayjs/core'
+import { ValidateService } from '@midwayjs/validate'
 // import { ILogger as Logger } from '@midwayjs/logger'
 import { AliOssManager } from '@mwcp/ali-oss'
 import {
@@ -30,6 +31,8 @@ export class RootClass {
 
   @Inject() readonly ctx: Context
 
+  @Inject() readonly validateService: ValidateService
+
   @Inject() readonly aliOssMan: AliOssManager
 
   @Inject() readonly environmentService: MidwayEnvironmentService
@@ -49,7 +52,7 @@ export class RootClass {
   @Config() readonly globalErrorCode: Record<string | number, string | number>
 
   /**
-   * SnowFlake id Generatoror
+   * SnowFlake id Generator
    * @usage ```
    *  const id = this.idGenerator
    *  const strId = id.toString()
