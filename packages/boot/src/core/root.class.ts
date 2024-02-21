@@ -1,5 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import assert from 'node:assert/strict'
 import type { IncomingHttpHeaders } from 'node:http'
+
 
 import { App, Config, Inject, MidwayEnvironmentService } from '@midwayjs/core'
 import { ValidateService } from '@midwayjs/validate'
@@ -274,8 +276,31 @@ export class RootClass {
     return this.ctx['jwtState'].user as T
   }
 
-  throwError(message: string, status?: number, error?: Error): never {
-    throw new MyError(message, status, error)
+  throwError(message: string, status?: number, cause?: Error): never {
+    throw new MyError(message, status, cause)
+  }
+
+
+  assert(value: unknown, message?: string, status = 500): asserts value {
+    try {
+      assert(value, message)
+    }
+    catch (ex) {
+      const msg = message ?? (ex instanceof Error ? ex.message : 'assert')
+      const cause = ex instanceof Error ? ex : undefined
+      throw new MyError(msg, status, cause)
+    }
+  }
+
+  assertStrictEqual<T>(actual: unknown, expected: T, message?: string, status = 500): asserts actual is T {
+    try {
+      assert.strictEqual(actual, expected, message)
+    }
+    catch (ex) {
+      const msg = message ?? (ex instanceof Error ? ex.message : 'assert.strictEqual')
+      const cause = ex instanceof Error ? ex : undefined
+      throw new MyError(msg, status, cause)
+    }
   }
 
 }
