@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [20.14.0](https://github.com/waitingsong/midway-boot/compare/v20.13.0...v20.14.0) (2024-02-21)
+
+
+### Features
+
+* **boot:** add methods of RootClass ([2522c4e](https://github.com/waitingsong/midway-boot/commit/2522c4e5d884b4a39c0f5891a1051776c27dc69e))
+
+
+
+
+
 # [20.13.0](https://github.com/waitingsong/midway-boot/compare/v20.12.1...v20.13.0) (2024-02-03)
 
 
