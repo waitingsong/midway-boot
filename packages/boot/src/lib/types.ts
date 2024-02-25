@@ -24,16 +24,20 @@ export {
 export type { JwtResult } from '@mwcp/jwt'
 
 export {
+  type CacheManagerConfig,
+  type CacheManagerOptions,
   type CacheableArgs,
-  type CacheConfig,
   type CacheEvictArgs,
   type DataWithCacheMeta,
   type KeyGenerator,
+  type MidwayCache,
+  type MidwayMultiCache,
+  type MidwayUnionCache,
   Cacheable,
   CacheEvict,
   CachePut,
   CacheConfigKey,
-  CacheManager,
+  CachingFactory,
 } from '@mwcp/cache'
 
 export {
