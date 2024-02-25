@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [21.0.0](https://github.com/waitingsong/midway-boot/compare/v20.14.1...v21.0.0) (2024-02-25)
+
+
+### chore
+
+* **boot:** bump deps version ([8dd4e3c](https://github.com/waitingsong/midway-boot/commit/8dd4e3cf3d0fcc86f1ffd4db2d4964bcba3de6ff))
+
+
+### BREAKING CHANGES
+
+* **boot:** cache config to cacheManagerConfig from @mwcp/cache
+exports add:
+- CacheManagerConfig
+- CacheManagerOptions
+- MidwayCache
+- MidwayMultiCache
+- MidwayUnionCache
+exports remove:
+- CacheConfig (use CacheManagerConfig instead)
+- CacheManager (use CachingFactory instead)
+
+
+
+
+
 ## [20.14.1](https://github.com/waitingsong/midway-boot/compare/v20.14.0...v20.14.1) (2024-02-22)
 
 **Note:** Version bump only for package midway-components
