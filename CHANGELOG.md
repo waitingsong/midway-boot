@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [21.1.0](https://github.com/waitingsong/midway-boot/compare/v21.0.1...v21.1.0) (2024-02-28)
+
+
+### Features
+
+* **boot:** add dep @midwayjs/cron (not enabled) ([404f85f](https://github.com/waitingsong/midway-boot/commit/404f85ffd56ae4ff41a5ed154b55be8ed48a7332))
+
+
+
+
+
 ## [21.0.1](https://github.com/waitingsong/midway-boot/compare/v21.0.0...v21.0.1) (2024-02-26)
 
 **Note:** Version bump only for package midway-components
