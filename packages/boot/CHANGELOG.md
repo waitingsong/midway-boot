@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [21.2.0](https://github.com/waitingsong/midway-boot/compare/v21.1.2...v21.2.0) (2024-03-12)
+
+
+### Features
+
+* **boot:** add methods of RootClass ([3a3c7f8](https://github.com/waitingsong/midway-boot/commit/3a3c7f82f81ff0f2659fe90de8c4f2b23709a0ac))
+
+
+
+
+
 ## [21.1.2](https://github.com/waitingsong/midway-boot/compare/v21.1.1...v21.1.2) (2024-03-06)
 
 **Note:** Version bump only for package @mwcp/boot
