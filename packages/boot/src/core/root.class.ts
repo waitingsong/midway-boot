@@ -2,7 +2,6 @@
 import assert from 'node:assert/strict'
 import type { IncomingHttpHeaders } from 'node:http'
 
-
 import { App, Config, Inject, MidwayEnvironmentService } from '@midwayjs/core'
 import { ValidateService } from '@midwayjs/validate'
 // import { ILogger as Logger } from '@midwayjs/logger'
@@ -16,7 +15,7 @@ import {
 import { JwtComponent } from '@mwcp/jwt'
 import { KoidComponent } from '@mwcp/koid'
 import { AttrNames, TraceLogger, TraceService } from '@mwcp/otel'
-import { MyError } from '@mwcp/share'
+import { formatDateTime, MyError } from '@mwcp/share'
 
 import {
   Application,
@@ -301,6 +300,23 @@ export class RootClass {
       const cause = ex instanceof Error ? ex : undefined
       throw new MyError(msg, status, cause)
     }
+  }
+
+  convertSecondsToMilliseconds(seconds: number): number {
+    return seconds * 1000
+  }
+
+  convertSecondsToDateString(seconds: number): string {
+    const ret = formatDateTime(seconds * 1000)
+    return ret
+  }
+
+  convertSecondsToDateObject(seconds: number): Date {
+    return new Date(seconds * 1000)
+  }
+
+  convertMillisecondsToDate(milliseconds: number): Date {
+    return new Date(milliseconds)
   }
 
 }
