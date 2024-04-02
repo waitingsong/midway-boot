@@ -36,7 +36,7 @@
     "@midwayjs/redis": "^3.15.2",
     "@midwayjs/static-file": "^3.15.2",
     "@midwayjs/upload": "^3.15.2",
-    "@mwcp/ali-oss": "^22.1.2",
+    "@mwcp/ali-oss": "^23.1.0",
     "@mwcp/cache": "^22.1.2",
     "@mwcp/fetch": "^26.0.1",
     "@mwcp/jwt": "^22.1.2",
