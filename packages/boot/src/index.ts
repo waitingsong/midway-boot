@@ -34,3 +34,4 @@ export {
 } from '@mwcp/share'
 
 
+export { Config as MConfig } from '@midwayjs/core'
