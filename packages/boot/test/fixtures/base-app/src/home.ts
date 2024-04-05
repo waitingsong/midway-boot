@@ -2,16 +2,13 @@ import {
   Controller,
   Get,
 } from '@midwayjs/core'
-import { Context, MConfig } from '@mwcp/share'
+import { Context } from '@mwcp/share'
 
 import { RespData } from '../../../root.config.js'
 
 
 @Controller('/')
 export class HomeController {
-
-  @MConfig(ConfigKey.config) protected readonly config: Config
-  @MConfig(ConfigKey.middlewareConfig) protected readonly mwConfig: MiddlewareConfig
 
   @Get('/')
   async home(ctx: Context): Promise<RespData> {
