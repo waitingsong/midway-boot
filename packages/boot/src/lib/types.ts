@@ -81,7 +81,7 @@ export enum ConfigKey {
   config = 'bootConfig',
   middlewareConfig = 'bootMiddlewareConfig',
   componentName = 'bootComponent',
-  middlewareName = 'bootMiddleware'
+  middlewareName = 'bootMiddleware',
 }
 
 export enum Msg {

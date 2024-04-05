@@ -16,6 +16,7 @@ import { MiddlewareConfig } from '@waiting/shared-types'
  */
 @Middleware()
 export class JsonRespMiddleware implements IMiddleware<Context, NextFunction> {
+
   @App() readonly app: Application
 
   // static getName(): string {
@@ -44,14 +45,14 @@ async function middleware(
   await next()
 
   const mwConfig = ctx.app.getConfig('jsonRespMiddlewareConfig') as Omit<MiddlewareConfig, 'match'> | undefined
-  if (! mwConfig || mwConfig.enableMiddleware !== true) { return }
+  if (! mwConfig?.enableMiddleware) { return }
 
-  if (isRespJsonMime(ctx) === false) { return }
+  if (! isRespJsonMime(ctx)) { return }
 
   const flag = shouldEnableMiddleware(ctx, mwConfig)
   if (! flag) { return }
 
-  if (isRespWrapped(ctx) === true) { return }
+  if (isRespWrapped(ctx)) { return }
 
   wrapRespToJson(ctx)
 }
@@ -61,9 +62,9 @@ async function middleware(
  * 对于 `application/json` 响应类型，将 ctx.body 包裹成 JsonResp 格式数据
  */
 function wrapRespToJson(ctx: Context): void {
-  const body = ctx.body as JsonResp | void
+  const body = ctx.body as JsonResp | undefined
 
-  if (isRespWrapped(ctx) === true) { return }
+  if (isRespWrapped(ctx)) { return }
 
   if (ctx.status === 204) { // no content
     ctx.status = 200 // force return JsonResp<T> structure

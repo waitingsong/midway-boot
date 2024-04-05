@@ -101,16 +101,14 @@ export class RootClass {
    * 请求和返回类型都是 JSON 格式，
    * 返回类型为 `JsonResp` 结构
    */
-  fetch<T extends ResponseData>(
-    options: FetchOptions,
-  ): Promise<JsonResp<T>> {
+  fetch<T extends ResponseData>(options: FetchOptions): Promise<JsonResp<T>> {
 
     const opts: FetchOptions = {
       ...this.initFetchOptions,
       ...options,
       headers: this.genFetchHeaders(options.headers),
     }
-    return this.fetchService.fetch(opts) as Promise<JsonResp<T>>
+    return this.fetchService.fetch(opts)
   }
 
   /**
@@ -127,7 +125,7 @@ export class RootClass {
       ...options,
       headers: this.genFetchHeaders(options?.headers),
     }
-    return this.fetchService.get(url, opts) as Promise<JsonResp<T>>
+    return this.fetchService.get(url, opts)
   }
 
   /**
@@ -144,7 +142,7 @@ export class RootClass {
       ...options,
       headers: this.genFetchHeaders(options?.headers),
     }
-    return this.fetchService.post(url, opts) as Promise<JsonResp<T>>
+    return this.fetchService.post(url, opts)
   }
 
 
@@ -152,9 +150,7 @@ export class RootClass {
    * 请求和返回类型都是 JSON 格式，
    * 返回类型为自定义结构
    */
-  fetchCustom<T>(
-    options: FetchOptions,
-  ): Promise<T> {
+  fetchCustom<T>(options: FetchOptions): Promise<T> {
 
     const opts: FetchOptions = {
       ...this.initFetchOptions,
@@ -215,7 +211,7 @@ export class RootClass {
       dataType: 'text',
     }
     const ret = await this.fetchService.get<T>(url, opts)
-    return ret as T
+    return ret
   }
 
   /**
