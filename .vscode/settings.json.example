@@ -7,9 +7,10 @@
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.organizeImports": false
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
   },
+  "eslint.experimental.useFlatConfig": true,
   "eslint.run": "onSave",
   "eslint.validate": [
     "javascript",
@@ -152,4 +153,3 @@
   },
   "workbench.editor.wrapTabs": false
 }
-
