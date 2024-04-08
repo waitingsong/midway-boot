@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [21.4.0](https://github.com/waitingsong/midway-boot/compare/v21.3.2...v21.4.0) (2024-04-08)
+
+**Note:** Version bump only for package midway-components
+
+
+
+
+
 ## [21.3.2](https://github.com/waitingsong/midway-boot/compare/v21.3.1...v21.3.2) (2024-04-08)
 
 **Note:** Version bump only for package midway-components
