@@ -26,6 +26,12 @@ const pkg = packageJson as unknown as NpmPkg
 assert(pkg, 'package.json not found')
 assert(pkg.name, 'package.json name not found')
 
+export const koa = {
+  port: 7001,
+  serverTimeout: 60_000,
+  requestTimeout: 120_000,
+}
+
 
 export const welcomeMsg = 'Hello Midwayjs!'
 export const globalErrorCode = ErrorCode
