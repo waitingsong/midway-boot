@@ -10,7 +10,7 @@ import { MiddlewareConfig, NpmPkg } from '@waiting/shared-types'
 
 import { ConfigKey, ErrorCode } from '##/lib/index.js'
 
-import packageJson from '#package.json' assert { type: 'json' }
+import packageJson from '#package.json' with { type: 'json' }
 
 
 const configDir = genCurrentDirname(import.meta.url)
