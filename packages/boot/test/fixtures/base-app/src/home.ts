@@ -4,13 +4,14 @@ import {
 } from '@midwayjs/core'
 import { Context } from '@mwcp/share'
 
+import { apiBase, apiMethod } from '../../../api-test.js'
 import { RespData } from '../../../root.config.js'
 
 
-@Controller('/')
+@Controller(apiBase.root)
 export class HomeController {
 
-  @Get('/')
+  @Get(apiMethod.root)
   async home(ctx: Context): Promise<RespData> {
     const {
       cookies,

@@ -4,10 +4,10 @@ import {
   Context,
   IMiddleware,
   JsonResp,
+  MiddlewareConfig,
   NextFunction,
   shouldEnableMiddleware,
 } from '@mwcp/share'
-import { MiddlewareConfig } from '@waiting/shared-types'
 
 
 /**
@@ -35,6 +35,7 @@ export class JsonRespMiddleware implements IMiddleware<Context, NextFunction> {
 
 }
 
+// #region impl
 const mimeJson = 'application/json'
 
 async function middleware(
@@ -44,7 +45,7 @@ async function middleware(
 
   await next()
 
-  const mwConfig = ctx.app.getConfig('jsonRespMiddlewareConfig') as Omit<MiddlewareConfig, 'match'> | undefined
+  const mwConfig = ctx.app.getConfig('jsonRespMiddlewareConfig') as Omit<MiddlewareConfig<unknown>, 'match'> | undefined
   if (! mwConfig?.enableMiddleware) { return }
 
   if (! isRespJsonMime(ctx)) { return }
