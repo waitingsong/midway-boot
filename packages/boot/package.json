@@ -30,25 +30,25 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@midwayjs/cron": "^3.15.9",
-    "@midwayjs/info": "^3.15.11",
-    "@midwayjs/prometheus": "^3.15.11",
-    "@midwayjs/redis": "^3.15.8",
-    "@midwayjs/static-file": "^3.15.11",
-    "@midwayjs/upload": "^3.15.11",
+    "@midwayjs/cron": "^3.16.0",
+    "@midwayjs/info": "^3.16.1",
+    "@midwayjs/prometheus": "^3.16.1",
+    "@midwayjs/redis": "^3.16.0",
+    "@midwayjs/static-file": "^3.16.1",
+    "@midwayjs/upload": "^3.16.1",
     "@mwcp/ali-oss": "^26.5.1",
     "@mwcp/cache": "^26.5.1",
-    "@mwcp/fetch": "^28.0.0",
+    "@mwcp/fetch": "^28.0.1",
     "@mwcp/jwt": "^26.5.0",
     "@mwcp/kmore": "^60.0.0",
-    "@mwcp/koid": "^14.2.7",
+    "@mwcp/koid": "^14.2.8",
     "@mwcp/otel": "^26.5.1",
     "@mwcp/share": "^26.5.0",
-    "@waiting/shared-core": "^23.6.1",
-    "undici": "^6.15.0"
+    "@waiting/shared-core": "^23.9.0",
+    "undici": "^6.16.0"
   },
   "devDependencies": {
-    "@midwayjs/swagger": "^3.15.11",
+    "@midwayjs/swagger": "^3.16.1",
     "kmore-cli": "^60.0.0"
   },
   "engines": {
