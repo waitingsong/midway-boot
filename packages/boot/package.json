@@ -39,7 +39,7 @@
     "@mwcp/ali-oss": "^28.1.0",
     "@mwcp/cache": "^28.1.0",
     "@mwcp/fetch": "^28.1.0",
-    "@mwcp/jwt": "^28.0.0",
+    "@mwcp/jwt": "^29.0.0",
     "@mwcp/kmore": "^60.1.1",
     "@mwcp/koid": "^14.3.0",
     "@mwcp/otel": "^28.1.0",
