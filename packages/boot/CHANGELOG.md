@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [21.9.0](https://github.com/waitingsong/midway-boot/compare/v21.8.1...v21.9.0) (2024-06-04)
+
+
+### Features
+
+* **boot:** bump deps version ([023cc86](https://github.com/waitingsong/midway-boot/commit/023cc862327b7556a369466c2cadaca4c9d915ef))
+
+
+
+
+
 ## [21.8.1](https://github.com/waitingsong/midway-boot/compare/v21.8.0...v21.8.1) (2024-05-31)
 
 **Note:** Version bump only for package @mwcp/boot
