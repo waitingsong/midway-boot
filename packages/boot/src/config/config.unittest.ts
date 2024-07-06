@@ -1,6 +1,6 @@
 import { initPathArray } from '@mwcp/jwt'
 
-import { AppConfig } from '##/lib/index.js'
+import type { AppConfig } from '##/lib/index.js'
 
 
 const jwtIgnoreArr = [

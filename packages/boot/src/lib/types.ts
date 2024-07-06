@@ -1,5 +1,5 @@
 
-export {
+export type {
   Application,
   AppConfig,
   AppInfomation,
@@ -70,9 +70,9 @@ export {
 } from '@mwcp/kmore'
 
 export {
-  ConfigDc as KoidConfigDc,
-  ConfigNode as KoidConfigNode,
-  KoidConfig,
+  type ConfigDc as KoidConfigDc,
+  type ConfigNode as KoidConfigNode,
+  type KoidConfig,
   KoidConfigKey,
 } from '@mwcp/koid'
 

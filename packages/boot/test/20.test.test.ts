@@ -2,7 +2,8 @@ import assert from 'node:assert/strict'
 
 import { fileShortPath } from '@waiting/shared-core'
 
-import { ErrorCode, JsonResp } from '../src/index.js'
+import type { JsonResp } from '../src/index.js'
+import { ErrorCode } from '../src/index.js'
 
 import { testConfig, TestRespBody } from './root.config.js'
 

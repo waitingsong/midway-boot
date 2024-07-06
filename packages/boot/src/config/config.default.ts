@@ -6,7 +6,7 @@ import { join } from 'node:path'
 import { uploadWhiteList } from '@midwayjs/upload'
 import { initPathArray } from '@mwcp/jwt'
 import { retrieveFirstIp, genCurrentDirname } from '@waiting/shared-core'
-import { MiddlewareConfig, NpmPkg } from '@waiting/shared-types'
+import type { MiddlewareConfig, NpmPkg } from '@waiting/shared-types'
 
 import { ConfigKey, ErrorCode } from '##/lib/index.js'
 

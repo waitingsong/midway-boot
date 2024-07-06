@@ -1,6 +1,6 @@
 import type { PrometheusConfig } from '@midwayjs/prometheus'
 import type { JwtState } from '@mwcp/jwt'
-import { MiddlewareConfig } from '@waiting/shared-types'
+import type { MiddlewareConfig } from '@waiting/shared-types'
 
 
 export { ContainerConfiguration as Configuration } from './configuration.js'
