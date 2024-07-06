@@ -3,7 +3,7 @@ import {
   Get,
 } from '@midwayjs/core'
 
-import { RootClass } from '../../../../dist/index.js'
+import { RootClass } from './types/index.js'
 
 
 @Controller('/test')
