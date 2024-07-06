@@ -43,7 +43,6 @@
     "@mwcp/kmore": "^61.2.2",
     "@mwcp/koid": "^15.1.0",
     "@mwcp/otel": "^30.17.0",
-    "@waiting/shared-core": "^23.20.0",
     "undici": "^6.19.2"
   },
   "devDependencies": {
