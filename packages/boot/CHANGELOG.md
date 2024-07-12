@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [22.0.0](https://github.com/waitingsong/midway-boot/compare/v21.10.2...v22.0.0) (2024-07-12)
+
+
+### Features
+
+* **boot:** modify properties on root.class.ts ([decacec](https://github.com/waitingsong/midway-boot/commit/decacec2f248f598d3f4b0eb60cb02f8bff76fac))
+
+
+
+
+
 ## [21.10.2](https://github.com/waitingsong/midway-boot/compare/v21.10.1...v21.10.2) (2024-07-12)
 
 **Note:** Version bump only for package @mwcp/boot
