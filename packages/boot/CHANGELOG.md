@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [23.0.0](https://github.com/waitingsong/midway-boot/compare/v22.0.0...v23.0.0) (2024-07-12)
+
+
+### Features
+
+* **boot:** move fetch method onto RootClass ([25693b6](https://github.com/waitingsong/midway-boot/commit/25693b672c70d0a311c78da5675a78ca46cb1043))
+
+
+
+
+
 # [22.0.0](https://github.com/waitingsong/midway-boot/compare/v21.10.2...v22.0.0) (2024-07-12)
 
 
