@@ -8,6 +8,7 @@ export * from './app/index.controller.js'
 export * from './lib/index.js'
 export * from './middleware/index.middleware.js'
 export { RootClass } from './core/root.class.js'
+export { RootController } from './core/base.controller.js'
 
 
 // @ts-ignore

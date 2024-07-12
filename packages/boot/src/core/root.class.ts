@@ -5,7 +5,6 @@ import type { IncomingHttpHeaders } from 'node:http'
 import { App, Config, Inject, MidwayEnvironmentService } from '@midwayjs/core'
 import { ValidateService } from '@midwayjs/validate'
 // import { ILogger as Logger } from '@midwayjs/logger'
-import { AliOssManager } from '@mwcp/ali-oss'
 import {
   FetchService,
   Headers,
@@ -17,7 +16,7 @@ import { KoidComponent } from '@mwcp/koid'
 import { AttrNames, TraceLogger, TraceService } from '@mwcp/otel'
 import { formatDateTime, MyError } from '@mwcp/share'
 
-import {
+import type {
   Application,
   Context,
   FetchOptions,
@@ -30,11 +29,7 @@ export class RootClass {
 
   @App() protected readonly app: Application
 
-  @Inject() readonly ctx: Context
-
   @Inject() readonly validateService: ValidateService
-
-  @Inject() readonly aliOssMan: AliOssManager
 
   @Inject() readonly environmentService: MidwayEnvironmentService
 
@@ -262,13 +257,14 @@ export class RootClass {
     return ret
   }
 
-  getJwtPayload<T = unknown>(): T {
+  getJwtPayload<T = unknown>(ctx: Context): T {
+    assert(ctx, 'ctx is required')
     // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-    if (! this.ctx['jwtState'].user) {
+    if (! ctx['jwtState'].user) {
       this.throwError('获取 jwt payload 信息为空')
     }
     // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-    return this.ctx['jwtState'].user as T
+    return ctx['jwtState'].user as T
   }
 
   throwError(message: string, status?: number, cause?: Error): never {
