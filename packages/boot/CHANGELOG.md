@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [23.1.0](https://github.com/waitingsong/midway-boot/compare/v23.0.0...v23.1.0) (2024-07-15)
+
+
+### Features
+
+* **boot:** use '@midwayjs/tenant' ([652ab28](https://github.com/waitingsong/midway-boot/commit/652ab284c0c13c6a991cd223c6bc5e4205e94935))
+
+
+
+
+
 # [23.0.0](https://github.com/waitingsong/midway-boot/compare/v22.0.0...v23.0.0) (2024-07-12)
 
 
