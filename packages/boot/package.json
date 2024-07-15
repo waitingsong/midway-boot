@@ -37,13 +37,13 @@
     "@midwayjs/static-file": "^3.16.4",
     "@midwayjs/tenant": "^3.16.4",
     "@midwayjs/upload": "^3.16.4",
-    "@mwcp/ali-oss": "^30.18.0",
-    "@mwcp/cache": "^30.18.0",
+    "@mwcp/ali-oss": "^30.20.0",
+    "@mwcp/cache": "^30.20.0",
     "@mwcp/fetch": "^30.0.1",
-    "@mwcp/jwt": "^30.18.0",
+    "@mwcp/jwt": "^30.20.0",
     "@mwcp/kmore": "^61.2.10",
     "@mwcp/koid": "^15.1.0",
-    "@mwcp/otel": "^30.18.0",
+    "@mwcp/otel": "^30.20.0",
     "undici": "^6.19.2"
   },
   "devDependencies": {
@@ -52,7 +52,7 @@
   },
   "engines": {
     "node": ">=18.12.0",
-    "@midwayjs/core": ">=3.15.0"
+    "@midwayjs/core": ">=3.16.0"
   },
   "files": [
     "README.*.md",
