@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [23.2.0](https://github.com/waitingsong/midway-boot/compare/v23.1.0...v23.2.0) (2024-07-15)
+
+**Note:** Version bump only for package midway-components
+
+
+
+
+
 # [23.1.0](https://github.com/waitingsong/midway-boot/compare/v23.0.0...v23.1.0) (2024-07-15)
 
 
