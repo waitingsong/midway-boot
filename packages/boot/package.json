@@ -41,7 +41,7 @@
     "@mwcp/cache": "^30.20.0",
     "@mwcp/fetch": "^30.0.1",
     "@mwcp/jwt": "^30.20.0",
-    "@mwcp/kmore": "^61.2.10",
+    "@mwcp/kmore": "^63.0.0",
     "@mwcp/koid": "^15.1.0",
     "@mwcp/otel": "^30.20.0",
     "undici": "^6.19.2"
