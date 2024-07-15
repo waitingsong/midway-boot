@@ -10,6 +10,7 @@ import * as jwt from '@mwcp/jwt'
 import * as db from '@mwcp/kmore'
 import * as koid from '@mwcp/koid'
 import * as otel from '@mwcp/otel'
+import * as tenant from '@midwayjs/tenant'
 // import { customLogger } from './util/custom-logger'
 
 
@@ -33,6 +34,7 @@ export const useComponents: IComponentInfo[] = [
   cache,
   upload,
   info,
+  tenant,
 ]
 
 export const useDefaultRoutes: (string | RegExp)[] = [

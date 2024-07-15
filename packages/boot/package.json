@@ -35,6 +35,7 @@
     "@midwayjs/prometheus": "^3.16.4",
     "@midwayjs/redis": "^3.16.4",
     "@midwayjs/static-file": "^3.16.4",
+    "@midwayjs/tenant": "^3.16.4",
     "@midwayjs/upload": "^3.16.4",
     "@mwcp/ali-oss": "^30.18.0",
     "@mwcp/cache": "^30.18.0",
