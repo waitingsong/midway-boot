@@ -49,8 +49,9 @@ async function middleware(
   ctx.set(key, reqId)
 
   const traceService = await ctx.requestContext.getAsync(TraceService)
-  if (traceService.isStarted) {
-    traceService.setAttributes(traceService.rootSpan, {
+  if (traceService.isStartedMap.get(ctx)) {
+    const rootSpan = traceService.getRootSpan(ctx)
+    traceService.setAttributes(rootSpan, {
       reqId,
     })
   }

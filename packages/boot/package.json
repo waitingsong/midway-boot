@@ -37,18 +37,18 @@
     "@midwayjs/static-file": "^3.16.4",
     "@midwayjs/tenant": "^3.16.4",
     "@midwayjs/upload": "^3.16.4",
-    "@mwcp/ali-oss": "^30.20.0",
-    "@mwcp/cache": "^30.20.0",
-    "@mwcp/fetch": "^30.0.1",
-    "@mwcp/jwt": "^30.20.0",
-    "@mwcp/kmore": "^63.0.0",
-    "@mwcp/koid": "^15.1.0",
-    "@mwcp/otel": "^30.20.0",
-    "undici": "^6.19.2"
+    "@mwcp/ali-oss": "^32.0.0",
+    "@mwcp/cache": "^32.0.0",
+    "@mwcp/fetch": "^31.0.0",
+    "@mwcp/jwt": "^32.0.0",
+    "@mwcp/kmore": "^64.0.0",
+    "@mwcp/koid": "^16.0.0",
+    "@mwcp/otel": "^32.0.0",
+    "undici": "^6.19.4"
   },
   "devDependencies": {
     "@midwayjs/swagger": "^3.16.4",
-    "kmore-cli": "^63.0.0"
+    "kmore-cli": "^64.0.0"
   },
   "engines": {
     "node": ">=18.12.0",
