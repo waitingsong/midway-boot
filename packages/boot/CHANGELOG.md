@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [23.3.0](https://github.com/waitingsong/midway-boot/compare/v23.2.0...v23.3.0) (2024-07-24)
+
+
+### Features
+
+* **boot:** add RootClass.getWebContext() and move traceService() from RootController to RootClass ([0bd4d42](https://github.com/waitingsong/midway-boot/commit/0bd4d42a42011b8ddb006f63151500b84c0c5d42))
+
+
+
+
+
 # [23.2.0](https://github.com/waitingsong/midway-boot/compare/v23.1.0...v23.2.0) (2024-07-15)
 
 **Note:** Version bump only for package @mwcp/boot
