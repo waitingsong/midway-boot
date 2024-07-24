@@ -2,7 +2,16 @@
 import assert from 'node:assert/strict'
 import type { IncomingHttpHeaders } from 'node:http'
 
-import { App, Config, Inject, MidwayEnvironmentService } from '@midwayjs/core'
+import {
+  type AsyncContextManager,
+  App,
+  ApplicationContext,
+  ASYNC_CONTEXT_KEY,
+  ASYNC_CONTEXT_MANAGER_KEY,
+  Inject,
+  IMidwayContainer,
+  MidwayEnvironmentService,
+} from '@midwayjs/core'
 import { ValidateService } from '@midwayjs/validate'
 // import { ILogger as Logger } from '@midwayjs/logger'
 import {
@@ -14,8 +23,8 @@ import {
 } from '@mwcp/fetch'
 import { JwtComponent } from '@mwcp/jwt'
 import { KoidComponent } from '@mwcp/koid'
-import { AttrNames } from '@mwcp/otel'
-import { formatDateTime, MyError } from '@mwcp/share'
+import { AttrNames, TraceService } from '@mwcp/otel'
+import { formatDateTime, MConfig, MyError } from '@mwcp/share'
 
 import {
   Application,
@@ -29,6 +38,8 @@ export class RootClass {
 
   @App() protected readonly app: Application
 
+  @ApplicationContext() readonly applicationContext: IMidwayContainer
+
   @Inject() readonly validateService: ValidateService
 
   @Inject() readonly environmentService: MidwayEnvironmentService
@@ -39,8 +50,25 @@ export class RootClass {
 
   @Inject() readonly jwt: JwtComponent
 
-  @Config() readonly pkg: NpmPkg
-  @Config() readonly globalErrorCode: Record<string | number, string | number>
+  @Inject() readonly traceService: TraceService
+
+  @MConfig() readonly pkg: NpmPkg
+  @MConfig() readonly globalErrorCode: Record<string | number, string | number>
+
+  getWebContext(): Context | undefined {
+    try {
+      const contextManager: AsyncContextManager = this.applicationContext.get(
+        ASYNC_CONTEXT_MANAGER_KEY,
+      )
+      const ctx = contextManager.active().getValue(ASYNC_CONTEXT_KEY) as Context | undefined
+      return ctx
+    }
+    catch (ex) {
+      // void ex
+      console.warn(new Error('getWebContext() failed', { cause: ex }))
+      return void 0
+    }
+  }
 
   /**
    * SnowFlake id Generator
