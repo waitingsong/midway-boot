@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [23.5.0](https://github.com/waitingsong/midway-boot/compare/v23.4.0...v23.5.0) (2024-08-13)
+
+
+### Features
+
+* **boot:** bump deps version ([68715d8](https://github.com/waitingsong/midway-boot/commit/68715d82b54abeebc69ebe2d005bec4aa158fe34))
+
+
+
+
+
 # [23.4.0](https://github.com/waitingsong/midway-boot/compare/v23.3.0...v23.4.0) (2024-08-12)
 
 
