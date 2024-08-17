@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [23.6.0](https://github.com/waitingsong/midway-boot/compare/v23.5.0...v23.6.0) (2024-08-17)
+
+
+### Features
+
+* **boot:** add deps @mwcp/pqmg ([3ad50d3](https://github.com/waitingsong/midway-boot/commit/3ad50d3ac6766ed487d76cde177fee77020d005e))
+
+
+
+
+
 # [23.5.0](https://github.com/waitingsong/midway-boot/compare/v23.4.0...v23.5.0) (2024-08-13)
 
 

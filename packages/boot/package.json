@@ -1,7 +1,7 @@
 {
   "name": "@mwcp/boot",
   "author": "waiting",
-  "version": "23.5.0",
+  "version": "23.6.0",
   "description": "midway.js boot",
   "keywords": [
     "midway",
@@ -43,8 +43,8 @@
     "@mwcp/jwt": "^37.2.0",
     "@mwcp/kmore": "^66.0.0",
     "@mwcp/koid": "^17.0.0",
-    "@mwcp/pgmq": "^1.0.0",
     "@mwcp/otel": "^37.2.0",
+    "@mwcp/pgmq": "^1.0.0",
     "undici": "^6.19.7"
   },
   "devDependencies": {
