@@ -1,6 +1,7 @@
 import * as info from '@midwayjs/info'
 import * as koa from '@midwayjs/koa'
 import * as prometheus from '@midwayjs/prometheus'
+import * as tenant from '@midwayjs/tenant'
 import * as upload from '@midwayjs/upload'
 import * as validate from '@midwayjs/validate'
 import * as aliOss from '@mwcp/ali-oss'
@@ -10,7 +11,7 @@ import * as jwt from '@mwcp/jwt'
 import * as db from '@mwcp/kmore'
 import * as koid from '@mwcp/koid'
 import * as otel from '@mwcp/otel'
-import * as tenant from '@midwayjs/tenant'
+import * as pgmq from '@mwcp/pgmq'
 // import { customLogger } from './util/custom-logger'
 
 
@@ -35,6 +36,7 @@ export const useComponents: IComponentInfo[] = [
   upload,
   info,
   tenant,
+  pgmq,
 ]
 
 export const useDefaultRoutes: (string | RegExp)[] = [
