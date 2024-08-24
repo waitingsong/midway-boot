@@ -1,27 +1,14 @@
-import { initPathArray } from '@mwcp/jwt'
 
-import type { AppConfig } from '##/lib/index.js'
+export * from './misc/koa.config.unittest.js'
+export * from './jwt/jwt.config.unittest.js'
 
 
-const jwtIgnoreArr = [
-  ...initPathArray,
-  '/_info', // https://www.npmjs.com/package/@midwayjs/info
-  '/hello',
-  '/ip',
-  '/test/err',
-  '/test/array',
-  '/test/blank',
-  '/test/empty',
-  '/test/fetch',
-  '/test/_fetch_target',
-  '/test/no_output',
-  '/test/sign',
-  /debug\/dump\/.*/u,
-  /unittest/u,
-  '/_boot/hello',
-]
-export const jwtMiddlewareConfig: AppConfig['jwtMiddlewareConfig'] = {
-  enableMiddleware: true,
-  ignore: jwtIgnoreArr,
+export const security = {
+  csrf: false,
+}
+
+// 建议跑测试的时候关闭日志(true)，这样手动故意触发的错误，都不会显示处理。如果想看则打开(false)
+export const logger = {
+  disableConsoleAfterReady: true,
 }
 
