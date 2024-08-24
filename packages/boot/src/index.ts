@@ -11,8 +11,7 @@ export { RootClass } from './core/root.class.js'
 export { RootController } from './core/base.controller.js'
 
 
-// @ts-ignore
-declare module '@midwayjs/core/dist/interface' {
+declare module '@midwayjs/core/dist/interface.js' {
   interface MidwayConfig {
     jsonRespMiddlewareConfig: Omit<MiddlewareConfig, 'match'> | undefined
     globalErrorCode: Record<string | number, string | number>
@@ -21,8 +20,7 @@ declare module '@midwayjs/core/dist/interface' {
   }
 }
 
-// @ts-ignore
-declare module '@midwayjs/koa/dist/interface' {
+declare module '@midwayjs/koa/dist/interface.js' {
   interface Context {
     jwtState: JwtState
     reqId: string
