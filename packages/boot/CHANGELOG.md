@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [23.7.0](https://github.com/waitingsong/midway-boot/compare/v23.6.0...v23.7.0) (2024-08-24)
+
+
+### Features
+
+* **boot:** add components config files ([d6d7a4e](https://github.com/waitingsong/midway-boot/commit/d6d7a4e9008e8a135e0ffec8b04a8898fedb5ee7))
+
+
+
+
+
 # [23.6.0](https://github.com/waitingsong/midway-boot/compare/v23.5.0...v23.6.0) (2024-08-17)
 
 
