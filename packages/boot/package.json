@@ -41,10 +41,10 @@
     "@mwcp/cache": "^37.2.0",
     "@mwcp/fetch": "^32.0.0",
     "@mwcp/jwt": "^37.2.0",
-    "@mwcp/kmore": "^66.0.0",
+    "@mwcp/kmore": "^66.0.1",
     "@mwcp/koid": "^17.0.0",
     "@mwcp/otel": "^37.2.0",
-    "@mwcp/pgmq": "^1.0.0",
+    "@mwcp/pgmq": "^2.0.2",
     "undici": "^6.19.7"
   },
   "devDependencies": {
