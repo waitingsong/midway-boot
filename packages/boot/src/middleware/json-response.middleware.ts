@@ -1,13 +1,14 @@
 import { App, Middleware } from '@midwayjs/core'
-import {
+import type {
   Application,
   Context,
   IMiddleware,
-  JsonResp,
+  MiddlewareResolve,
   MiddlewareConfig,
   NextFunction,
-  shouldEnableMiddleware,
+  JsonResp,
 } from '@mwcp/share'
+import { shouldEnableMiddleware } from '@mwcp/share'
 
 
 /**
@@ -24,12 +25,12 @@ export class JsonRespMiddleware implements IMiddleware<Context, NextFunction> {
   //   return name
   // }
 
-  match(ctx?: Context) {
+  match(ctx?: Context): boolean {
     const flag = !! ctx
     return flag
   }
 
-  resolve() {
+  resolve(): MiddlewareResolve {
     return middleware
   }
 
