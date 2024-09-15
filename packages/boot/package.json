@@ -30,26 +30,26 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@midwayjs/busboy": "^3.17.1",
+    "@midwayjs/busboy": "^3.17.3",
     "@midwayjs/cron": "^3.17.1",
-    "@midwayjs/info": "^3.17.1",
+    "@midwayjs/info": "^3.17.3",
     "@midwayjs/prometheus": "^3.17.1",
     "@midwayjs/redis": "^3.17.1",
-    "@midwayjs/static-file": "^3.17.1",
+    "@midwayjs/static-file": "^3.17.3",
     "@midwayjs/tenant": "^3.17.1",
-    "@mwcp/ali-oss": "^37.4.0",
-    "@mwcp/cache": "^37.4.0",
-    "@mwcp/fetch": "^32.0.1",
-    "@mwcp/jwt": "^37.4.0",
+    "@mwcp/ali-oss": "^38.2.0",
+    "@mwcp/cache": "^38.2.0",
+    "@mwcp/fetch": "^32.2.0",
+    "@mwcp/jwt": "^38.2.0",
     "@mwcp/kmore": "^66.1.0",
     "@mwcp/koid": "^17.0.0",
-    "@mwcp/otel": "^37.4.0",
+    "@mwcp/otel": "^38.2.0",
     "@mwcp/pgmq": "^2.1.3",
     "undici": "^6.19.8"
   },
   "devDependencies": {
-    "@midwayjs/swagger": "^3.17.2",
-    "kmore-cli": "^66.0.0"
+    "@midwayjs/swagger": "^3.17.3",
+    "kmore-cli": "^66.0.2"
   },
   "engines": {
     "node": ">=18.12.0",
