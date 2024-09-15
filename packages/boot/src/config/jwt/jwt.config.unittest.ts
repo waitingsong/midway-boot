@@ -23,6 +23,7 @@ const jwtIgnoreArr = [
   /unittest/u,
   '/_info', // https://www.npmjs.com/package/@midwayjs/info
   '/_boot/hello',
+  '/upload/hello',
   // RegExp(`${ClientURL.base}/.*`, 'u'),
 ]
 export const jwtMiddlewareConfig: AppConfig['jwtMiddlewareConfig'] = {

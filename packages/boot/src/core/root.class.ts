@@ -64,9 +64,7 @@ export class RootClass {
       return ctx
     }
     catch (ex) {
-      // void ex
-      console.warn(new Error('getWebContext() failed', { cause: ex }))
-      return void 0
+      void ex
     }
   }
 
@@ -177,7 +175,6 @@ export class RootClass {
       ...options,
       headers: this.genFetchHeaders(options.headers),
     }
-    assert(opts.webContext, 'webContext is required')
     return this.fetchComponent.fetch(opts)
   }
 
@@ -186,13 +183,11 @@ export class RootClass {
    * 返回类型为 `JsonResp` 结构
    */
   getJson<T extends ResponseData>(
-    ctx: Context,
     url: string,
     options?: FetchOptions,
   ): Promise<JsonResp<T>> {
 
     const opts: FetchOptions = {
-      webContext: ctx,
       ...this.initFetchOptions,
       ...options,
       url,
@@ -207,13 +202,11 @@ export class RootClass {
    * 返回类型为 `JsonResp` 结构
    */
   postJson<T extends ResponseData>(
-    ctx: Context,
     url: string,
     options?: FetchOptions,
   ): Promise<JsonResp<T>> {
 
     const opts: FetchOptions = {
-      webContext: ctx,
       ...this.initFetchOptions,
       ...options,
       url,
@@ -233,7 +226,6 @@ export class RootClass {
       ...options,
       headers: this.genFetchHeaders(options.headers),
     }
-    assert(opts.webContext, 'webContext is required')
     return this.fetchComponent.fetch(opts) as Promise<T>
   }
 
@@ -242,13 +234,11 @@ export class RootClass {
    * 返回类型为自定义结构
    */
   getCustomJson<T>(
-    ctx: Context,
     url: string,
     options?: FetchOptions,
   ): Promise<T> {
 
     const opts: FetchOptions = {
-      webContext: ctx,
       ...this.initFetchOptions,
       ...options,
       url,
@@ -263,13 +253,11 @@ export class RootClass {
    * 返回类型为自定义结构
    */
   postCustomJson<T>(
-    ctx: Context,
     url: string,
     options?: FetchOptions,
   ): Promise<T> {
 
     const opts: FetchOptions = {
-      webContext: ctx,
       ...this.initFetchOptions,
       ...options,
       url,
@@ -283,13 +271,11 @@ export class RootClass {
    * 返回类型为字符串
    */
   async getText<T extends string = string>(
-    ctx: Context,
     url: string,
     options?: FetchOptions,
   ): Promise<T> {
 
     const opts: FetchOptions = {
-      webContext: ctx,
       ...this.initFetchOptions,
       ...options,
       headers: this.genFetchHeaders(options?.headers),
