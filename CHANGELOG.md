@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [24.0.0](https://github.com/waitingsong/midway-boot/compare/v23.7.2...v24.0.0) (2024-09-16)
+
+
+### Features
+
+* **boot:** breaking changes ([6df1bb6](https://github.com/waitingsong/midway-boot/commit/6df1bb6fc44ddf48bd9744f5fb09053edc4e8859))
+* **boot:** bump deps version ([6ce80be](https://github.com/waitingsong/midway-boot/commit/6ce80be9737871c9abf328272bb6681928c1d6b6))
+* **boot:** bump deps version ([2709fff](https://github.com/waitingsong/midway-boot/commit/2709fff4671afd890a9c680516513b88f8eafc72))
+* **boot:** replace @midwayjs/upload with @midwayjs/busboy ([0132a0b](https://github.com/waitingsong/midway-boot/commit/0132a0b6495c44417989c8ce0620b91350a8ff17))
+
+
+
+
+
 ## [23.7.2](https://github.com/waitingsong/midway-boot/compare/v23.7.1...v23.7.2) (2024-09-09)
 
 **Note:** Version bump only for package midway-components
