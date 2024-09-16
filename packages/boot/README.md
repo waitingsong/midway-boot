@@ -9,13 +9,11 @@ Various midway.js components integrated
 [![ci](https://github.com/waitingsong/midway-boot/actions/workflows/nodejs.yml/badge.svg
 )](https://github.com/waitingsong/midway-boot/actions)
 [![codecov](https://codecov.io/gh/waitingsong/midway-boot/graph/badge.svg?token=EA9vubhbiL)](https://codecov.io/gh/waitingsong/midway-boot)
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 
 
 ## Note
 
-ESM build only, requires `@midwayjs >= 3.15` and set `"type": "module"` in `packages.json`
+ESM build only, requires `@midwayjs >= 3.16` and set `"type": "module"` in `packages.json`
 
 ## Install
 
