@@ -122,6 +122,9 @@ jobs:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
           PGPASSWORD: postgres
+          PGMQ_HOST: pgmq
+          PGMQ_PORT: 15432
+          PGMQ_PASSWORD: postgres
 
       - name: Testing
         run: |
