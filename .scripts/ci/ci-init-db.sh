@@ -17,6 +17,7 @@ psql -h $PGMQ_HOST -p $PGMQ_PORT -U$PGMQ_USER -d $PGMQ_DB -c "SHOW TIMEZONE;"
 SQL_DIR='./node_modules/@waiting/pgmq-js/database/'
 
 cd "$SQL_DIR"
+pwd
 . ./init-db.sh
 cd -
 

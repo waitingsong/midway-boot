@@ -86,6 +86,16 @@ jobs:
           PGMQ_USER: postgres
           PGMQ_PASSWORD: postgres
 
+      - name: Install Dependencies
+        timeout-minutes: 15
+        run: |
+          # DO NOT execute: npm config set unsafe-perm=true
+          export cwd=`pwd`
+          npm i --no-audit -g c8 lerna madge tsx zx
+          npm i
+        env:
+          CI: true
+
       - name: Init Database
         run: |
           export cwd=`pwd`
@@ -105,16 +115,6 @@ jobs:
           PGMQ_DB: db_ci_test
           PGMQ_USER: postgres
           PGMQ_PASSWORD: postgres
-
-      - name: Install Dependencies
-        timeout-minutes: 15
-        run: |
-          # DO NOT execute: npm config set unsafe-perm=true
-          export cwd=`pwd`
-          npm i --no-audit -g c8 lerna madge tsx zx
-          npm i
-        env:
-          CI: true
 
       - name: Build
         run: |
