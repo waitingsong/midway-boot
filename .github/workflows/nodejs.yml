@@ -123,7 +123,7 @@ jobs:
           POSTGRES_PASSWORD: postgres
           PGPASSWORD: postgres
           PGMQ_HOST: pgmq
-          PGMQ_PORT: 15432
+          PGMQ_PORT: 5432
           PGMQ_PASSWORD: postgres
 
       - name: Testing
@@ -145,7 +145,7 @@ jobs:
           PGPASSWORD: postgres
           # pgmq
           PGMQ_HOST: pgmq
-          PGMQ_PORT: 15432
+          PGMQ_PORT: 5432
           PGMQ_DB: db_ci_test
           PGMQ_USER: postgres
           PGMQ_PASSWORD: postgres
@@ -206,7 +206,7 @@ jobs:
       pgmq:
         image: quay.io/tembo/pgmq-pg:latest
         ports:
-          - 5432:15432
+          - 5433:5432
         env:
           POSTGRES_DB: db_ci_test
           POSTGRES_USER: postgres
