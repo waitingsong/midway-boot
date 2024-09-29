@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [24.1.0](https://github.com/waitingsong/midway-boot/compare/v24.0.0...v24.1.0) (2024-09-29)
+
+**Note:** Version bump only for package @mwcp/boot
+
+
+
+
+
 # [24.0.0](https://github.com/waitingsong/midway-boot/compare/v23.7.2...v24.0.0) (2024-09-16)
 
 
