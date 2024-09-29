@@ -146,6 +146,8 @@ jobs:
           # pgmq
           PGMQ_HOST: pgmq
           PGMQ_PORT: 15432
+          PGMQ_DB: db_ci_test
+          PGMQ_USER: postgres
           PGMQ_PASSWORD: postgres
           # redis
           REDIS_HOST: redis
@@ -204,7 +206,7 @@ jobs:
       pgmq:
         image: quay.io/tembo/pgmq-pg:latest
         ports:
-          - 15432:5432
+          - 5432:15432
         env:
           POSTGRES_DB: db_ci_test
           POSTGRES_USER: postgres
