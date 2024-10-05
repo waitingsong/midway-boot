@@ -218,7 +218,7 @@ jobs:
           - 16686:16686
 
       pgmq:
-        image: quay.io/tembo/pg16-pgmq:latest
+        image: quay.io/tembo/pg17-pgmq:latest
         ports:
           - 5433:5432
         env:
