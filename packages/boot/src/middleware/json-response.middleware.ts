@@ -3,10 +3,10 @@ import type {
   Application,
   Context,
   IMiddleware,
-  MiddlewareResolve,
-  MiddlewareConfig,
-  NextFunction,
   JsonResp,
+  MiddlewareConfig,
+  MiddlewareResolve,
+  NextFunction,
 } from '@mwcp/share'
 import { shouldEnableMiddleware } from '@mwcp/share'
 
@@ -112,7 +112,7 @@ function isRespWrapped(ctx: Context): boolean {
   return false
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+
 function genJsonBody(ctx: Context, payload: JsonResp | undefined): JsonResp {
   const { status, reqId } = ctx
   const body: JsonResp = {

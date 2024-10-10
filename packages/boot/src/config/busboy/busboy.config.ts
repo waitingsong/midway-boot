@@ -1,7 +1,7 @@
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 
-import { uploadWhiteList, DefaultUploadFileMimeType } from '@midwayjs/busboy'
+import { DefaultUploadFileMimeType, uploadWhiteList } from '@midwayjs/busboy'
 
 
 /**

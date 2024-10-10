@@ -1,7 +1,7 @@
 import assert from 'node:assert'
 import { join } from 'node:path'
 
-import { retrieveFirstIp, genCurrentDirname } from '@waiting/shared-core'
+import { genCurrentDirname, retrieveFirstIp } from '@waiting/shared-core'
 import type { MiddlewareConfig, NpmPkg } from '@waiting/shared-types'
 
 import packageJson from '#package.json' with { type: 'json' }

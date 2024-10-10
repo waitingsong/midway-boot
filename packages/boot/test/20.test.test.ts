@@ -4,7 +4,7 @@ import { fileShortPath } from '@waiting/shared-core'
 
 import { type JsonResp, ErrorCode } from '##/index.js'
 import { apiBase, apiMethod } from '#@/api-test.js'
-import { testConfig, TestRespBody } from '#@/root.config.js'
+import { TestRespBody, testConfig } from '#@/root.config.js'
 
 
 describe(fileShortPath(import.meta.url), () => {

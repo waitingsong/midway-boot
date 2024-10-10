@@ -1,12 +1,12 @@
-/* eslint-disable import/max-dependencies */
+
 import assert from 'node:assert/strict'
 
 import {
   App,
   Configuration,
   ILifeCycle,
-  Inject,
   ILogger,
+  Inject,
   Logger,
   MidwayInformationService,
 } from '@midwayjs/core'

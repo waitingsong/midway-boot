@@ -1,36 +1,36 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import assert from 'node:assert/strict'
 import type { IncomingHttpHeaders } from 'node:http'
 
 import {
   type AsyncContextManager,
-  App,
-  ApplicationContext,
   ASYNC_CONTEXT_KEY,
   ASYNC_CONTEXT_MANAGER_KEY,
-  Inject,
+  App,
+  ApplicationContext,
   IMidwayContainer,
+  Inject,
   MidwayEnvironmentService,
 } from '@midwayjs/core'
 import { ValidateService } from '@midwayjs/validate'
 // import { ILogger as Logger } from '@midwayjs/logger'
 import {
-  FetchComponent,
-  Headers,
   type HeadersInit,
   type JsonResp,
   type ResponseData,
+  FetchComponent,
+  Headers,
 } from '@mwcp/fetch'
 import { JwtComponent } from '@mwcp/jwt'
 import { KoidComponent } from '@mwcp/koid'
 import { AttrNames, TraceService } from '@mwcp/otel'
-import { formatDateTime, MConfig, MyError } from '@mwcp/share'
+import { MConfig, MyError, formatDateTime } from '@mwcp/share'
 
 import {
-  Application,
-  Context,
   type FetchOptions,
   type NpmPkg,
+  Application,
+  Context,
 } from '##/lib/index.js'
 
 
@@ -111,13 +111,14 @@ export class RootClass {
   }
 
 
+  // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-parameters
   getJwtPayload<T = unknown>(ctx: Context): T {
     assert(ctx, 'ctx is required')
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+
     if (! ctx['jwtState'].user) {
       this.throwError('获取 jwt payload 信息为空')
     }
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+
     return ctx['jwtState'].user as T
   }
 
@@ -295,7 +296,7 @@ export class RootClass {
    *   - content-length
    */
   genFetchHeaders(
-    headers?: HeadersInit | IncomingHttpHeaders | undefined,
+    headers?: HeadersInit | IncomingHttpHeaders,
     excludes: string[] = ['host', 'connection', 'content-length'],
   ): Headers {
 

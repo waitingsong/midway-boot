@@ -52,7 +52,7 @@ async function middleware(
     // 兼容运行ci的时候，assert抛出的错误为AssertionError没有status
     const [message, messageStatus] = myerr.message.split(' &>')
 
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+
     let status: number = typeof myerr.status === 'number'
       ? myerr.status
       /* c8 ignore next */
