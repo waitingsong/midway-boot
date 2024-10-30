@@ -69,6 +69,6 @@ npm run purge
 
 
 [`boot`]: https://github.com/waitingsong/midway-boot/tree/main/packages/boot
-[boot-svg]: https://img.shields.io/npm/v/@mwcp/boot.svg?maxAge=7200
+[boot-svg]: https://img.shields.io/npm/v/@mwcp/boot.svg?maxAge=300
 [boot-ch]: https://github.com/waitingsong/midway-boot/tree/main/packages/boot/CHANGELOG.md
 
