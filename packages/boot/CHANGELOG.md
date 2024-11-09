@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [24.2.0](https://github.com/waitingsong/midway-boot/compare/v24.1.2...v24.2.0) (2024-11-09)
+
+
+### Features
+
+* **boot:** bump deps version ([4891ae0](https://github.com/waitingsong/midway-boot/commit/4891ae055135c39784100dbb225b6c5a0aca293b))
+* **boot:** bump deps version ([a14f197](https://github.com/waitingsong/midway-boot/commit/a14f19753a37e557ee917038ca00c0b272b08631))
+
+
+
+
+
 ## [24.1.2](https://github.com/waitingsong/midway-boot/compare/v24.1.1...v24.1.2) (2024-10-10)
 
 **Note:** Version bump only for package @mwcp/boot
