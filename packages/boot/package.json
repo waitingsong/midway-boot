@@ -52,7 +52,7 @@
     "kmore-cli": "^67.2.2"
   },
   "engines": {
-    "node": ">=18.12.0",
+    "node": ">=20.11.0",
     "@midwayjs/core": ">=3.16.0"
   },
   "files": [
